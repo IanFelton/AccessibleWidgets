@@ -1,0 +1,25 @@
+/* CSS Document */
+.tree-item-active{
+	
+}
+.tree-item-active:focus{
+	/*outline: none;*/
+}
+.tree-group-collapsed{}
+.tree-parent-collapsed{}
+
+ul.tree, ul.tree ul {
+    list-style: none;
+}
+
+ul.tree li[aria-expanded = "true"] ul {
+    display: block;
+}
+
+ul.tree li[aria-expanded = "false"] ul {
+    display: none;
+}
+
+ul.tree li:focus {
+	/*outline: none;*/
+}

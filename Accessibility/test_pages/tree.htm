@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Tree</title>
+		<link href="../css/tree.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../javascript/EnterpriseCode.js"></script>
+        <script type="text/javascript" src="../javascript/EnterpriseCode.Tree.js"></script>
+        <script type="text/javascript">
+            <!--
+            $(document).ready(function(){
+                EnterpriseCode.Tree({
+                    selector: "#EnterpriseCodetree"
+                });               
+            });
+			-->
+        </script>
+    </head>
+    <body>
+    	<h1>A Fruit Tree</h1>
+        <!-- Initially selected item needs tabindex="0" -->
+        <ul class="tree" aria-labelledby="label_1" id="EnterpriseCodetree">
+            <li aria-labelledby="fruit000">
+                <a href="javascript:void(0);"><span id="fruit000">Fruits</span></a>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">Oranges</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Pineapples</a>
+                    </li>
+                    <li aria-labelledby="fruit300">
+                        <a href="javascript:void(0);"><span id="fruit300">Apple</span></a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">Oranges</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pineapples</a>
+                            </li>
+                            <li aria-labelledby="fruit200">
+                                <a href="javascript:void(0);"><span id="fruit200">Apple</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Bananas</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pears</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Bananas</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Pears</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+		<a href="">Random link to test tabindex</a>
+		
+		<h2>Keyboard Shortcuts</h2>
+
+    <ul><li>Up: Select previous tree item</li>
+    <li>Down: Select next tree item</li>
+    <li>Left: Collapse node if possible</li>
+    <li>Right: Expand node if possible</li>
+    <li>Space: Execute link action</li>
+    <li>Enter: Execute link action</li>
+    <li>Tab: Navigate away from tree</li></ul>
+
+<h2>ARIA Roles and Properties</h2>
+
+   <ul> <li>Roles:</li>
+          <ul><li>role="presentation"</li>
+          <li>role="application"</li>
+          <li>role="tree"</li>
+          <li>role="treeitem"</li>
+          <li>role="group"</li></ul>
+    <li>States and properties:</li>
+          <ul><li>aria-labelledby</li>
+          <li>aria-expanded</li>
+          <li>aria-controls</li></ul></ul>
+
+    </body>
+</html>

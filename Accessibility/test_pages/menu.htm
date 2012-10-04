@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Menu Sample</title>		
+		<link type="text/css" rel="stylesheet" href="../css/menu.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="../javascript/EnterpriseCode.js"></script>
+		<script type="text/javascript" src="../javascript/EnterpriseCode.Menu.js"></script>
+		<script type="text/javascript" src="../javascript/EnterpriseCode.MenuButton.js"></script>
+		<script type="text/javascript" src="../javascript/EnterpriseCode.MenuBar.js"></script>
+		<script type="text/javascript">
+	     $(document).ready(function(){		
+			var menuButton = new EnterpriseCode.MenuButton({'id': 'menu_trigger', 'targetMenu': 'sfnav1'});
+			var menuButton2 = new EnterpriseCode.MenuButton({'id': 'menu_trigger2', 'targetMenu': 'sfnav2'});
+			var menuButton3 = new EnterpriseCode.MenuButton({'id': 'menu_trigger3', 'targetMenu': 'sfnav3'});
+			
+			var menu1 = new EnterpriseCode.Menu({'id':'sfnav1'});
+			var menu2 = new EnterpriseCode.Menu({'id':'sfnav2'});
+			var menu3 = new EnterpriseCode.Menu({'id':'sfnav3'});
+			var menubar = new EnterpriseCode.MenuBar({'id': 'MenuControl', 'buttons': [menuButton, menuButton2, menuButton3]});
+			
+		 });
+	   </script>			
+	</head>
+    <body style="font-family:Arial;">
+        <h1>Menu</h1>
+		<div id="MenuControl">
+			<a href="javascript:void(0);" name="other_name" id="menu_trigger" style="cursor: pointer;">Other delivery options menu</a>
+			<a href="javascript:void(0);" name="other_name" id="menu_trigger2" style="cursor: pointer;">pummel menu</a>
+			<a href="javascript:void(0);" name="other_name" id="menu_trigger3" style="cursor: pointer;">pounce menu</a>
+		</div>
+			<ul id="sfnav1">
+			<li id=""><a href="">Fax</a>
+				<ul id="submenu3" style="display:none;">
+					<li id=""><a href="">Sub</a></li>
+					<li id=""><a href="">Sub 2</a></li>
+					<li id=""><a href="">Sub 3</a>
+						<ul id="submenu4" style="display:none;">
+							<li id=""><a href="">Sub</a></li>
+							<li id=""><a href="">Sub 2</a></li>
+							<li id=""><a href="">Sub 3</a></li>
+						</ul>
+					</li>
+				</ul>			
+			</li>
+			<li id=""><a href="">Save</a></li>
+			<li id="submenuparent1"><a href="">Print</a></li></ul>
+			<ul id="sfnav2">
+			<li id=""><a href="">Fax</a></li>
+			<li id=""><a href="">Save</a></li>
+			<li id=""><a href="">Print</a></li></ul>
+			<ul id="sfnav3">
+				<li id=""><a href="">Fax</a>
+					<ul id="submenu5" style="display:none;">
+						<li id=""><a href="">Sub</a></li>
+						<li id=""><a href="">Sub 2</a></li>
+						<li id=""><a href="">Sub 3</a>
+							<ul id="submenu6" style="display:none;">
+								<li id=""><a href="">Sub</a></li>
+								<li id=""><a href="">Sub 2</a></li>
+								<li id=""><a href="">Sub 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li id=""><a href="">Save</a></li>
+				<li id=""><a href="">Print</a>
+					<ul id="submenu1" style="display:none;">
+						<li id=""><a href="">Sub</a></li>
+						<li id=""><a href="">Sub 2</a></li>
+						<li id=""><a href="">Sub 3</a>
+							<ul id="submenu2" style="display:none;">
+								<li id=""><a href="">Sub</a></li>
+								<li id=""><a href="">Sub 2</a></li>
+								<li id=""><a href="">Sub 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>			
+			
+			<br /><br /><br /><br />

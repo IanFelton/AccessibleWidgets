@@ -1,0 +1,49 @@
+.EnterpriseCodeMenu, .EnterpriseCodeMenu ul, .protoMenu
+{
+	padding: 0;
+	margin: 0 0 0 0;
+	position: absolute;
+	list-style: none;
+	/*left: -999em;*/ 
+	padding:5px; 
+	white-space:nowrap;
+	border: 1px solid #808183;
+	color:Black;
+	text-decoration:none;
+	font-size:10pt;	
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color:White;
+}
+.EnterpriseCodeMenu li:hover
+{	
+	background-color:#FFF0CC;
+}
+.EnterpriseCodeMenu li a
+{
+	color:Black;
+	text-decoration:none;	
+	display:block;	
+}
+.menuDivider
+{
+	border-top:solid 2px #808183;	
+}
+.menuDisabled
+{	
+	text-decoration:none; 
+	color:Gray;
+	cursor:pointer;	
+}
+.hasSubMenu
+{
+	background-image:url("/images/icn_selected.gif");
+	background-repeat:no-repeat;
+	background-position:98%;
+}
+.breadCrumbsLink
+{
+	text-decoration:none; 
+	color:#424FE1;
+}
+
